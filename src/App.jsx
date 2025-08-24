@@ -4,7 +4,6 @@ import Home from './components/Home';
 import About from './components/About'
 import Menu from './components/Menu';
 import Review from './components/Review';
-import Footer from './components/Footer';
 const App = () => {
   return (
     <div>
@@ -23,7 +22,6 @@ const App = () => {
           <Review/>
         </div>
       </main>
-      <Footer/>
     </div>
   )
 }
