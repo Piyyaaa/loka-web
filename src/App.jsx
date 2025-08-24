@@ -1,31 +1,7 @@
-import React from 'react'
-import Navbar from './components/Navbar';
-import Home from './components/Home';
-import About from './components/About'
-import Menu from './components/Menu';
-import Review from './components/Review';
-import Footer from './components/Footer';
-const App = () => {
+export default function App() {
   return (
-    <div>
-      <Navbar />
-      <main>
-        <div id='home'>
-          <Home/>
-        </div>
-        <div id='about'>
-          <About/>
-        </div>
-        <div id='menu'>
-          <Menu/>
-        </div>
-        <div id='review'>
-          <Review/>
-        </div>
-      </main>
-      <Footer/>
+    <div style={{ textAlign: 'center', marginTop: '3rem' }}>
+      <h1 style={{ color: 'green' }}>Loka Web Deployed!</h1>
     </div>
   )
 }
-
-export default App
