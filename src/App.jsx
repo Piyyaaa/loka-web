@@ -1,7 +1,17 @@
-export default function App() {
+import React from 'react'
+import Navbar from './components/Navbar';
+import Home from './components/Home';
+const App = () => {
   return (
-    <div style={{ textAlign: 'center', marginTop: '3rem' }}>
-      <h1 style={{ color: 'green' }}>Loka Web Deployed!</h1>
+    <div>
+      <Navbar />
+      <main>
+        <div id='home'>
+          <Home/>
+        </div>
+      </main>
     </div>
   )
 }
+
+export default App
