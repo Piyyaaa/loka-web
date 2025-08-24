@@ -24,7 +24,7 @@ const ReviewCard = (props) => {
             </span>
         </div>
         <p>
-           {props.text}
+           {props.text || 'No review provided.'}
         </p>
     </div>
   )
