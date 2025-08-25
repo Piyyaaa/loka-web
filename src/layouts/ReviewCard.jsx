@@ -1,0 +1,38 @@
+import React from 'react'
+import {BsStarFill , BsStarHalf} from 'react-icons/bs';
+import {FaQuoteRight} from 'react-icons/fa';
+import PropTypes from 'prop-types'
+
+const ReviewCard = (props) => {
+  return (
+    <div className='flex flex-col w-full lg:w-2/6 bg-white p-3 rounded-lg gap-5'>
+        <div className='flex flex-row items-center lg:justify-start justify-center'>
+            <div className='w-1/4'>
+                <img className='rounded-full w-16 h-16 object-cover' src={props.img} alt={`${props.title}'s photo`}/>
+            </div>
+            <div className='mx-3'>
+                <h2 className='font-semibold text-lg'>{props.title}</h2>
+                <div className='flex'>
+                    <BsStarFill className='text-brightColor'/>
+                    <BsStarFill className='text-brightColor'/>
+                    <BsStarFill className='text-brightColor'/>
+                </div>
+            </div>
+            <span className='ml-auto'>
+                <FaQuoteRight className='text-brightColor' size={42}/>
+            </span>
+        </div>
+        <p>
+           {props.text || 'No review provided.'}
+        </p>
+    </div>
+  )
+}
+
+export default ReviewCard
+
+ReviewCard.propTypes = {
+  img: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  text: PropTypes.string,
+};
