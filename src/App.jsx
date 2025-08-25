@@ -19,7 +19,6 @@ const App = () => {
           <Menu/>
         </div>
       </main>
-      <Footer/>
     </div>
   )
 }
